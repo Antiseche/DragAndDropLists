@@ -1,8 +1,8 @@
 name: drag_and_drop_lists_plus
 description: Drag-and-drop reordering of two-level lists. A maintained continuation of drag_and_drop_lists.
 version: 0.5.0
-repository: https://github.com/Antiseche/DragAndDropLists
-issue_tracker: https://github.com/Antiseche/DragAndDropLists/issues
+repository: https://github.com/Antiseche/drag_and_drop_lists_plus
+issue_tracker: https://github.com/Antiseche/drag_and_drop_lists_plus/issues
 
 environment:
   sdk: '>=2.17.0 <4.0.0'
