@@ -201,20 +201,24 @@ class ProgrammaticExpansionTileState extends State<ProgrammaticExpansionTile>
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          ListTileTheme.merge(
-            iconColor: _iconColor.value,
-            textColor: _headerColor.value,
-            child: ListTile(
-              onTap: toggle,
-              leading: widget.leading,
-              title: widget.title,
-              subtitle: widget.subtitle,
-              isThreeLine: widget.isThreeLine,
-              trailing: widget.trailing ??
-                  RotationTransition(
-                    turns: _iconTurns,
-                    child: const Icon(Icons.expand_more),
-                  ),
+          // a transparent Material: the ListTile ink shows when tapping the header
+          Material(
+            color: Colors.transparent,
+            child: ListTileTheme.merge(
+              iconColor: _iconColor.value,
+              textColor: _headerColor.value,
+              child: ListTile(
+                onTap: toggle,
+                leading: widget.leading,
+                title: widget.title,
+                subtitle: widget.subtitle,
+                isThreeLine: widget.isThreeLine,
+                trailing: widget.trailing ??
+                    RotationTransition(
+                      turns: _iconTurns,
+                      child: const Icon(Icons.expand_more),
+                    ),
+              ),
             ),
           ),
           ClipRect(
