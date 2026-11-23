@@ -111,7 +111,7 @@ class _DragAndDropItemWrapper extends State<DragAndDropItemWrapper>
             ],
           ),
         );
-      } else if (widget.parameters!.dragOnLongPress) {
+      } else if (widget.parameters!.itemDragOnLongPress) {
         draggable = MeasureSize(
           onSizeChange: _setContainerSize,
           child: LongPressDraggable<DragAndDropItem>(

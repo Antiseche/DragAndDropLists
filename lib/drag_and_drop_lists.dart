@@ -405,6 +405,7 @@ class DragAndDropListsState extends State<DragAndDropLists> {
       itemDraggingWidth: widget.itemDraggingWidth,
       listSizeAnimationDuration: widget.listSizeAnimationDurationMilliseconds,
       dragOnLongPress: widget.listDragOnLongPress,
+      itemDragOnLongPress: widget.itemDragOnLongPress,
       listPadding: widget.listPadding,
       itemSizeAnimationDuration: widget.itemSizeAnimationDurationMilliseconds,
       onPointerDown: _onPointerDown,

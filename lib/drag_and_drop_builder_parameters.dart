@@ -36,6 +36,7 @@ class DragAndDropBuilderParameters {
   final CrossAxisAlignment verticalAlignment;
   final double? listDraggingWidth;
   final bool dragOnLongPress;
+  final bool itemDragOnLongPress;
   final int itemSizeAnimationDuration;
   final Widget? itemGhost;
   final double itemGhostOpacity;
@@ -72,6 +73,7 @@ class DragAndDropBuilderParameters {
     this.itemTargetOnWillAccept,
     this.onItemDraggingChanged,
     this.dragOnLongPress = true,
+    this.itemDragOnLongPress = true,
     this.axis = Axis.vertical,
     this.verticalAlignment = CrossAxisAlignment.start,
     this.itemSizeAnimationDuration = 150,
