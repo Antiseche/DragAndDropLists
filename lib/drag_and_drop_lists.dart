@@ -271,6 +271,10 @@ class DragAndDropLists extends StatefulWidget {
   /// inside a RefreshIndicator. Not used with [disableScrolling].
   final ScrollPhysics? scrollPhysics;
 
+  /// Enables the shrinkWrap property of the underlying ListView. Prevents unbounded
+  /// height exceptions e.g. when using this Widget inside another ListView
+  final bool shrinkWrap;
+
   /// Set a custom drag handle to use iOS-like handles to drag rather than long
   /// or short presses
   final DragHandle? listDragHandle;
@@ -337,6 +341,7 @@ class DragAndDropLists extends StatefulWidget {
     this.scrollController,
     this.disableScrolling = false,
     this.scrollPhysics,
+    this.shrinkWrap = false,
     this.listDragHandle,
     this.itemDragHandle,
     this.constrainDraggingAxis = true,
@@ -508,6 +513,7 @@ class DragAndDropListsState extends State<DragAndDropLists> {
       scrollDirection: widget.axis,
       controller: _scrollController,
       physics: widget.scrollPhysics,
+      shrinkWrap: widget.shrinkWrap,
       children: _buildOuterList(dragAndDropListTarget, parameters),
     );
 
