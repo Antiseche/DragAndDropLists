@@ -14,26 +14,26 @@ library drag_and_drop_lists;
 
 import 'dart:math';
 
-import 'package:drag_and_drop_lists/drag_and_drop_builder_parameters.dart';
-import 'package:drag_and_drop_lists/drag_and_drop_item.dart';
-import 'package:drag_and_drop_lists/drag_and_drop_item_target.dart';
-import 'package:drag_and_drop_lists/drag_and_drop_list_interface.dart';
-import 'package:drag_and_drop_lists/drag_and_drop_list_target.dart';
-import 'package:drag_and_drop_lists/drag_and_drop_list_wrapper.dart';
-import 'package:drag_and_drop_lists/drag_handle.dart';
+import 'package:drag_and_drop_lists_plus/drag_and_drop_builder_parameters.dart';
+import 'package:drag_and_drop_lists_plus/drag_and_drop_item.dart';
+import 'package:drag_and_drop_lists_plus/drag_and_drop_item_target.dart';
+import 'package:drag_and_drop_lists_plus/drag_and_drop_list_interface.dart';
+import 'package:drag_and_drop_lists_plus/drag_and_drop_list_target.dart';
+import 'package:drag_and_drop_lists_plus/drag_and_drop_list_wrapper.dart';
+import 'package:drag_and_drop_lists_plus/drag_handle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 
-export 'package:drag_and_drop_lists/drag_and_drop_builder_parameters.dart';
-export 'package:drag_and_drop_lists/drag_and_drop_item.dart';
-export 'package:drag_and_drop_lists/drag_and_drop_item_target.dart';
-export 'package:drag_and_drop_lists/drag_and_drop_item_wrapper.dart';
-export 'package:drag_and_drop_lists/drag_and_drop_list.dart';
-export 'package:drag_and_drop_lists/drag_and_drop_list_expansion.dart';
-export 'package:drag_and_drop_lists/drag_and_drop_list_target.dart';
-export 'package:drag_and_drop_lists/drag_and_drop_list_wrapper.dart';
-export 'package:drag_and_drop_lists/drag_handle.dart';
+export 'package:drag_and_drop_lists_plus/drag_and_drop_builder_parameters.dart';
+export 'package:drag_and_drop_lists_plus/drag_and_drop_item.dart';
+export 'package:drag_and_drop_lists_plus/drag_and_drop_item_target.dart';
+export 'package:drag_and_drop_lists_plus/drag_and_drop_item_wrapper.dart';
+export 'package:drag_and_drop_lists_plus/drag_and_drop_list.dart';
+export 'package:drag_and_drop_lists_plus/drag_and_drop_list_expansion.dart';
+export 'package:drag_and_drop_lists_plus/drag_and_drop_list_target.dart';
+export 'package:drag_and_drop_lists_plus/drag_and_drop_list_wrapper.dart';
+export 'package:drag_and_drop_lists_plus/drag_handle.dart';
 
 typedef OnItemReorder = void Function(
   int oldItemIndex,

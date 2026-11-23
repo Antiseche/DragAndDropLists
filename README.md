@@ -1,7 +1,20 @@
-# drag\_and\_drop\_lists
+# drag\_and\_drop\_lists\_plus
 Two-level drag and drop reorderable lists.
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/pbpbpb)
+A maintained continuation of [drag_and_drop_lists](https://pub.dev/packages/drag_and_drop_lists)
+by Philip Brink, which is no longer updated. It keeps the same API and adds the fixes listed in the
+[changelog](CHANGELOG.md). To migrate, rename the dependency and replace
+`package:drag_and_drop_lists/` with `package:drag_and_drop_lists_plus/` in your imports.
+
+For a drag without the rows below jumping, set both animation durations to 0:
+
+```dart
+DragAndDropLists(
+  itemSizeAnimationDurationMilliseconds: 0,
+  listSizeAnimationDurationMilliseconds: 0,
+  // ...
+)
+```
 
 ## Features
 - Reorder elements between multiple lists
@@ -25,15 +38,15 @@ Two-level drag and drop reorderable lists.
 </p>
 
 ## Usage
-To use this plugin, add `drag_and_drop_lists` as a [dependency in your pubspec.yaml file.](https://flutter.dev/docs/development/packages-and-plugins/using-packages)
+To use this plugin, add `drag_and_drop_lists_plus` as a [dependency in your pubspec.yaml file.](https://flutter.dev/docs/development/packages-and-plugins/using-packages)
 For example:
 
 ```
 dependencies:
-  drag_and_drop_lists: ^0.4.0
+  drag_and_drop_lists_plus: ^0.5.0
 ``` 
 
-Now in your Dart code, you can use: `import 'package:drag_and_drop_lists/drag_and_drop_lists.dart';`
+Now in your Dart code, you can use: `import 'package:drag_and_drop_lists_plus/drag_and_drop_lists.dart';`
 
 To add the lists, add a `DragAndDropLists` widget. Set its children to a list of `DragAndDropList`. Likewise, set the children of `DragAndDropList` to a list of `DragAndDropItem`.
 For example:

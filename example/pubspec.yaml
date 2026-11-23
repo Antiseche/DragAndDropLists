@@ -30,7 +30,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  drag_and_drop_lists:
+  drag_and_drop_lists_plus:
     path: ../
 
   # The following adds the Cupertino Icons font to your application.

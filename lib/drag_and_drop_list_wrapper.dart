@@ -1,8 +1,8 @@
-import 'package:drag_and_drop_lists/drag_and_drop_builder_parameters.dart';
-import 'package:drag_and_drop_lists/size_animation.dart';
-import 'package:drag_and_drop_lists/drag_and_drop_list_interface.dart';
-import 'package:drag_and_drop_lists/drag_handle.dart';
-import 'package:drag_and_drop_lists/measure_size.dart';
+import 'package:drag_and_drop_lists_plus/drag_and_drop_builder_parameters.dart';
+import 'package:drag_and_drop_lists_plus/size_animation.dart';
+import 'package:drag_and_drop_lists_plus/drag_and_drop_list_interface.dart';
+import 'package:drag_and_drop_lists_plus/drag_handle.dart';
+import 'package:drag_and_drop_lists_plus/measure_size.dart';
 import 'package:flutter/material.dart';
 
 class DragAndDropListWrapper extends StatefulWidget {

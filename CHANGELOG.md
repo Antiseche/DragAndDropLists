@@ -1,5 +1,22 @@
 # Changelog
 
+[0.5.0] - 23 November 2026
+
+First release of `drag_and_drop_lists_plus`, a maintained continuation of
+[drag_and_drop_lists](https://pub.dev/packages/drag_and_drop_lists) 0.4.2.
+To migrate, rename the dependency and the imports
+(`package:drag_and_drop_lists/` becomes `package:drag_and_drop_lists_plus/`).
+
+* A zero `itemSizeAnimationDurationMilliseconds` / `listSizeAnimationDurationMilliseconds`
+  no longer throws "A RenderAnimatedSize was mutated in its own performLayout implementation".
+  Set both to 0 to stop the rows below jumping up then sliding down when a drag starts (upstream #64, #115)
+* `itemDragOnLongPress` now controls item dragging; items used to follow `listDragOnLongPress` (upstream #71, #111)
+* New `scrollPhysics` option (upstream #83, thanks Mark Story)
+* New `shrinkWrap` option, to use the lists inside another scroll view (upstream #107, thanks Sascha Ernst)
+* Tap feedback on expansion tile headers (upstream #107, thanks Sascha Ernst)
+* `feedbackWidget` is used with an item drag handle too (upstream #87, thanks John Coggeshall)
+* No null check crash when a horizontal list has no `listPadding` (upstream #108, thanks lopes710)
+
 [0.4.2] - 26 November 2024
 
 * Add key getter to drag and drop list interface (thanks [@juancdominici](https://github.com/juancdominici))
