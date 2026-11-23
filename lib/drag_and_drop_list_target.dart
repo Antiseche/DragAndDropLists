@@ -1,4 +1,5 @@
 import 'package:drag_and_drop_lists/drag_and_drop_builder_parameters.dart';
+import 'package:drag_and_drop_lists/size_animation.dart';
 import 'package:drag_and_drop_lists/drag_and_drop_list_interface.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -33,7 +34,7 @@ class _DragAndDropListTarget extends State<DragAndDropListTarget>
   Widget build(BuildContext context) {
     Widget visibleContents = Column(
       children: <Widget>[
-        AnimatedSize(
+        SizeAnimation(
           duration: Duration(
               milliseconds: widget.parameters.listSizeAnimationDuration),
           alignment: widget.parameters.axis == Axis.vertical

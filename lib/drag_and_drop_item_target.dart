@@ -1,4 +1,5 @@
 import 'package:drag_and_drop_lists/drag_and_drop_list_interface.dart';
+import 'package:drag_and_drop_lists/size_animation.dart';
 import 'package:drag_and_drop_lists/drag_and_drop_lists.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -31,7 +32,7 @@ class _DragAndDropItemTarget extends State<DragAndDropItemTarget>
         Column(
           crossAxisAlignment: widget.parameters.verticalAlignment,
           children: <Widget>[
-            AnimatedSize(
+            SizeAnimation(
               duration: Duration(
                   milliseconds: widget.parameters.itemSizeAnimationDuration),
               alignment: Alignment.bottomCenter,

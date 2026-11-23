@@ -1,4 +1,5 @@
 import 'package:drag_and_drop_lists/drag_and_drop_builder_parameters.dart';
+import 'package:drag_and_drop_lists/size_animation.dart';
 import 'package:drag_and_drop_lists/drag_and_drop_list_interface.dart';
 import 'package:drag_and_drop_lists/drag_handle.dart';
 import 'package:drag_and_drop_lists/measure_size.dart';
@@ -118,7 +119,7 @@ class _DragAndDropListWrapper extends State<DragAndDropListWrapper>
     }
 
     var rowOrColumnChildren = <Widget>[
-      AnimatedSize(
+      SizeAnimation(
         duration:
             Duration(milliseconds: widget.parameters.listSizeAnimationDuration),
         alignment: widget.parameters.axis == Axis.vertical

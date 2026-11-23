@@ -1,4 +1,5 @@
 import 'package:drag_and_drop_lists/drag_and_drop_lists.dart';
+import 'package:drag_and_drop_lists/size_animation.dart';
 import 'package:drag_and_drop_lists/measure_size.dart';
 import 'package:flutter/material.dart';
 
@@ -173,7 +174,7 @@ class _DragAndDropItemWrapper extends State<DragAndDropItemWrapper>
         );
       }
     } else {
-      draggable = AnimatedSize(
+      draggable = SizeAnimation(
         duration: Duration(
             milliseconds: widget.parameters!.itemSizeAnimationDuration),
         alignment: Alignment.bottomCenter,
@@ -186,7 +187,7 @@ class _DragAndDropItemWrapper extends State<DragAndDropItemWrapper>
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: widget.parameters!.verticalAlignment,
           children: <Widget>[
-            AnimatedSize(
+            SizeAnimation(
               duration: Duration(
                   milliseconds: widget.parameters!.itemSizeAnimationDuration),
               alignment: Alignment.topLeft,
