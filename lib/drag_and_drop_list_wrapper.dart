@@ -134,7 +134,7 @@ class _DragAndDropListWrapper extends State<DragAndDropListWrapper>
                           ? const EdgeInsets.all(0)
                           : EdgeInsets.symmetric(
                               horizontal:
-                                  widget.parameters.listPadding!.horizontal),
+                                  widget.parameters.listPadding?.horizontal ?? 0),
                       child:
                           _hoveredDraggable!.generateWidget(widget.parameters),
                     ),

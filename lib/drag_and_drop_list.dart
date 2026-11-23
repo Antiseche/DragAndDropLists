@@ -102,7 +102,7 @@ class DragAndDropList implements DragAndDropListInterface {
       key: key,
       width: params.axis == Axis.vertical
           ? double.infinity
-          : params.listWidth - params.listPadding!.horizontal,
+          : params.listWidth - (params.listPadding?.horizontal ?? 0),
       decoration: decoration ?? params.listDecoration,
       child: Column(
         mainAxisSize: MainAxisSize.min,
